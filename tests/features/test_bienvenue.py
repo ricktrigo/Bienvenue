@@ -13,3 +13,9 @@ def test_estvide():
 
 def test_cris():
     assert Bienvenue.hello("JERRY") == "HELLO, JERRY!"
+
+
+def test_2_input():
+    assert Bienvenue.hello2("Amy,bob")=="Hello, Amy, Bob"
+    assert Bienvenue.hello2(" amy,bob") == "Hello, Amy, Bob"
+    assert Bienvenue.hello2("bob, amy") == "Hello, Bob, Amy"
