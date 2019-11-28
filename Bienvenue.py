@@ -14,3 +14,9 @@ def estvide(nom):
         return True
     else:
         return nom.isspace()
+
+
+def hello2(nom1,nom2):
+    nom2 = nom2[0].upper() + nom2[1:]
+    h=hello(nom1)+", "+nom2
+    return h
