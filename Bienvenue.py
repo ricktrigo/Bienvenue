@@ -16,7 +16,14 @@ def estvide(nom):
         return nom.isspace()
 
 
-def hello2(nom1,nom2):
-    nom2 = nom2[0].upper() + nom2[1:]
-    h=hello(nom1)+", "+nom2
-    return h
+def hello2(nom):
+    c=","
+    h="Hello"
+    chaine=""
+    nom.replace(" ","")
+    print (nom)
+    for i in nom.split(c):
+        i=i.strip()
+        i = i[0].upper() + i[1:]
+        chaine = chaine +", " + i
+    return h + chaine
