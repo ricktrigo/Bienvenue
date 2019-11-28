@@ -1,7 +1,10 @@
 def hello(nom):
-    if estvide(nom)==True:
+    if nom.isupper():
+        h = "HELLO, " + nom + "!"
+    elif estvide(nom)==True:
         h="Hello, my friend"
     else:
+        nom=nom[0].upper() + nom[1:]
         h="Hello, " + nom
     return h
 
