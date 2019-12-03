@@ -16,7 +16,7 @@ def estvide(nom):
         return nom.isspace()
 
 
-def hello2(nom):
+def hellon(nom):
     c=","
     h="Hello"
     chaine=""
