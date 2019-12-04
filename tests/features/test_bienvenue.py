@@ -27,3 +27,7 @@ def test_hello_n_cris():
     assert Bienvenue.hello_n_cris("Amy, BOB, Jerry")=="Hello, Amy, Jerry. AND HELLO, BOB !"
     assert Bienvenue.hello_n_cris("Amy, BOB, JERRY") == "Hello, Amy. AND HELLO, BOB, JERRY !"
     assert Bienvenue.hello_n_cris("Amy, Toto, BOB, JERRY") == "Hello, Amy, Toto. AND HELLO, BOB, JERRY !"
+
+
+def test_hello_and():
+    assert Bienvenue.hello_and("Amy, bob, Jerry")=="Hello, Amy, Bob and Jerry."

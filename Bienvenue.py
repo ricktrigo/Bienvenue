@@ -53,3 +53,32 @@ def hello_n_cris(nom):
         else:
             nom_min=nom_min+", "+i
     return "Hello"+nom_min+". AND "+hello_cris(nom_maj)
+
+
+def hello_and(nom):
+    list=split(nom)
+    chaine=""
+    min=[]
+    maj=[]
+    for i in list:
+        if i.islower:
+            min = min + [i]
+        else:
+            maj = maj + [i]
+    chaine=ajouter_and(min,maj)
+    return chaine
+
+
+def ajouter_and(min,maj):
+    chaine="Hello"
+    for i in min:
+        if min.index(i)!=len(min)-1:
+            chaine=chaine+", "+i
+        else:
+            chaine=chaine+" and "+i+"."
+    for i in maj:
+        if maj.index(i)!=len(maj)-2:
+            chaine=chaine+", "+i
+        else:
+            chaine=chaine+" AND "+i
+    return chaine
